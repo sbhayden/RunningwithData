@@ -1,0 +1,84 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+import pandas as pd
+
+
+# # Import Garmin Data
+
+# In[2]:
+
+
+garmin = pd.read_csv("garmin_data.csv") 
+
+
+# In[3]:
+
+
+garmin.head()
+
+
+# # Basic Stats on Garmin data
+
+# In[8]:
+
+
+total_distance = garmin['Distance'].sum(skipna=True)
+print("Total Distance ran", total_distance, "miles")
+
+
+# In[14]:
+
+
+mean_distance = garmin['Distance'].median()
+print("Average Distance ran", mean_distance, "miles")
+
+
+# In[13]:
+
+
+garmin['Distance'].describe()
+
+
+# # Import Strava Data
+
+# In[15]:
+
+
+strava = pd.read_csv("activities.csv") 
+
+
+# In[16]:
+
+
+strava.head()
+
+
+# In[17]:
+
+
+total_distance1 = strava['Distance'].sum(skipna=True)
+print("Total Distance ran", total_distance1, "miles")
+
+
+# In[18]:
+
+
+mean_distance1 = strava['Distance'].median()
+print("Average Distance ran", mean_distance1, "miles")
+
+
+# In[20]:
+
+
+strava['Distance'].describe()
+
+
+# In[ ]:
+
+
+
+
