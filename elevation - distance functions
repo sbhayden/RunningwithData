@@ -1,0 +1,19 @@
+def get_grade(distance, elevation):
+	# grade = elevation(m) / distance(m) * 100
+	grade = (elevation / (distance * 1000)) * 100
+
+	return grade
+
+def get_coefficient_by_grade(grade):
+	# 3% should be the highest coefficient
+	# 0% should be the lowest coefficient
+
+	# 3 = 100% of the (high-low)
+	# N = X%
+	# X% = (N / 3) * 100
+	coefficient_ratio = grade / max_grade
+	coefficient_increase = (degradation_coefficient_high - degradation_coefficient_low) * coefficient_ratio
+
+	degradation_coefficient = degradation_coefficient_low + coefficient_increase
+
+	return degradation_coefficient
