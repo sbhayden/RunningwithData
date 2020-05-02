@@ -1,9 +1,11 @@
-# RunningwithData
-Running with Data | MSDS Practicum II
+Objective
+
+For marathon runners, it’s almost a requirement to track our times and distances as we train for the next big race. We are constantly on the hunt for that new Personal Best (PB) time, and heavily rely on the data we collect while training to get us there. Many, like myself, use smartwatches such as the Garmin or a fitbit, to help track things such as distance, time, elevation, heart rate, etc. Each of these factors plays a key role in determining how fast we’ll run, how far we can go, and how difficult the journey to the finish line will be. While I am currently chasing my next PB with the hope to someday qualify for the Boston Marathon, I decided to examine my own performance from when I trained for the 2019 Chicago Marathon. For this project, I will be examining my training data to see if I can predict my Chicago Marathon time. While creating this prediction, I will also be examining the other factors that could play an influence on my performance, such as heart rate and elevation. 
 
 
+Data
 
-Can I use my Garmin data to help me achieve and predict my personal best for upcoming races? As a marathon runner, I am always trying to reach new personal bests for race times, with the ultimate goal being able to qualify for the Boston Marathon. Other runners have these same goals, so wouldn’t it be nice if you can not only track your data via your smart device, but then perform machine learning to achieve optimal performance? My goal with this research is to help educate myself and others on ways to improve performance by predicating my personal best times and utilizing data to its optimal advantage. 
+The data being used for this time prediction analysis is collected from my Garmin watch during my training for the Chicago Marathon in 2019. I chose to use my own data so I can accurately report if the predicted time matched my actual Chicago marathon time, as well as examine other factors that could have influenced mileage times. The dataset contains 121 logged activities, and 28 descriptive columns from May 3rd to October 20th in 2019. 
 
-Blog outline
-https://bethhayden1996.wixsite.com/website
+
+Read more here: https://bethhayden1996.wixsite.com/shayden/data
